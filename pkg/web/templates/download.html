@@ -132,11 +132,6 @@
                         return;
                     }
 
-                    if (urls.length + fileInput.files.length > 100) {
-                        createToast('Please submit up to 100 torrents at a time', 'warning');
-                        return;
-                    }
-
                     formData.append('arr', document.getElementById('arr').value);
                     formData.append('downloadFolder', document.getElementById('downloadFolder').value);
                     formData.append('action', document.getElementById('downloadAction').value);
